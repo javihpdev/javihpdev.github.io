@@ -6,17 +6,17 @@ function Nav(){
         {/* div de enlaces */}
             <div className="flex w-full justify-end items-center gap-10">
                 {/* Inicio */}
-                <Link href="/">Inicio</Link>
+                <Link href="#inicio">Inicio</Link>
                 {/* About Me */}
-                <Link href="/">About Me</Link>
+                <Link href="#aboutMe">Sobre Mí</Link>
                 {/* Experiencia */}
-                <Link href="/">Experiencia</Link>
+                <Link href="#experiencia">Experiencia</Link>
                 {/* Proyectos */}
-                <Link href="/">Proyecto</Link>
+                <Link href="#proyecto">Proyecto</Link>
                 {/* Estudios */}
-                <Link href="/">Estudios</Link>
+                <Link href="#estudios">Estudios</Link>
                 {/* Contacto */}
-                <Link href="/">Contacto</Link>
+                <Link href="#contacto">Contacto</Link>
             </div>
         </div>
     )
