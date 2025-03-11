@@ -10,7 +10,7 @@ function Contacto(){
             </div>
             <textarea rows={5} cols={2} placeholder="Mensaje" className="w-200 resize-none outline-none border-1 rounded-md  p-3"></textarea>
             <div className="flex justify-end w-200">
-            <Button href="/" className="px-5">Enviar</Button>
+            <Button href="/" className="px-5 hover:bg-green-800 hover:scale-105">Enviar</Button>
             </div>
         </div>
     )

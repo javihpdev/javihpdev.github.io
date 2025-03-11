@@ -7,6 +7,8 @@ import AboutMe from './routes/about-me/AboutMe.tsx'
 import Contacto from './routes/contacto/Contacto.tsx'
 import Inicio from './routes/Inicio/Inicio.tsx'
 import Estudios from './routes/estudios/Estudios.tsx'
+import Experiencia from './routes/experiencia/Experiencia.tsx'
+import Proyectos from './routes/proyectos/Proyectos.tsx'
 
 
 createRoot(document.getElementById('porfolio')!).render(
@@ -19,6 +21,8 @@ createRoot(document.getElementById('porfolio')!).render(
   <Nav />
   <Inicio />
   <AboutMe/>
+  <Experiencia />
+  <Proyectos />
   <Estudios />
   <Contacto />
 
