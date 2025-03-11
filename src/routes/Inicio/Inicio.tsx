@@ -5,10 +5,10 @@ import cvFile from "../../lib/files/CV Javier Hernandez Perez en el Paro.pdf";
 
 function Inicio() {
     return (
-        <div className="flex items-center justify-center gap-30 h-screen text-white">
+        <div id="inicio" className="flex items-center justify-center gap-30 h-screen text-white">
             <div className="flex flex-col items-center gap-3">
                 <h1 className="font-bold text-6xl">Soy Javier</h1>
-                <p>Desarrollador de Aplicaciones WEB</p>
+                <p>Desarrollador Web Full Stack con Experiencia en Tecnologías Modernas</p>
                 <Button href={cvFile} download="CV JavierHernandezPerez.pdf">Descargar CV</Button>
                 <div className="flex gap-5">
                 <Linkedn className="cursor-pointer" />
