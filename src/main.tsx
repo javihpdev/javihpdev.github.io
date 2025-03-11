@@ -6,6 +6,8 @@ import './index.css'
 import AboutMe from './routes/about-me/AboutMe.tsx'
 import Contacto from './routes/contacto/Contacto.tsx'
 import Inicio from './routes/Inicio/Inicio.tsx'
+import Estudios from './routes/estudios/Estudios.tsx'
+
 
 createRoot(document.getElementById('porfolio')!).render(
   // <StrictMode>
@@ -17,6 +19,8 @@ createRoot(document.getElementById('porfolio')!).render(
   <Nav />
   <Inicio />
   <AboutMe/>
+  <Estudios />
   <Contacto />
+
   </div>
 )
