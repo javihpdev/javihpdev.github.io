@@ -1,7 +1,6 @@
 import Github from "../../lib/components/icons/Github.tsx";
 import Linkedn from "../../lib/components/icons/Linkedn.tsx";
 import Button from "../../lib/components/web/Button.tsx";
-import cvFile from "../../lib/files/CV Javier Hernandez Perez en el Paro.pdf";
 import Mail from "../../lib/components/icons/Mail.tsx";
 
 function Inicio() {
@@ -14,8 +13,9 @@ function Inicio() {
                 <h1 className="font-bold text-6xl">Soy Javier</h1>
                 <p>Desarrollador Web Full Stack con Experiencia en Tecnologías Modernas</p>
                 </div>
-                <Button className="hover:bg-green-800 hover:scale-105"
-                href={cvFile} download="CV JavierHernandezPerez.pdf">Descargar CV</Button>
+                <Button className="hover:bg-green-800 hover:scale-105" href="public/files/CV Javier Hernandez Perez en el Paro.pdf">
+                        Descargar CV
+                    </Button>
                 {/* Div botones enlaces */}
                 <div className="flex gap-5">
                 <Linkedn className="cursor-pointer duration-500 hover:scale-110" />
