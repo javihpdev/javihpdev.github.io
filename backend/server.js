@@ -14,11 +14,11 @@ app.use(express.json()); // Para poder recibir datos JSON
 
 // Ruta para manejar el envío de contacto
 app.post('/enviar-correo', (req, res) => {
-    const { nombre, email, mensaje } = req.body;
-    console.log('Datos recibidos:', { nombre, email, mensaje }); 
+    const { asunto, nombre, email, mensaje } = req.body;
+    console.log('Datos recibidos:', { asunto,nombre, email, mensaje }); 
 
     // Validar que los campos no estén vacíos
-    if (!nombre || !email || !mensaje) {
+    if (!asunto ||!nombre || !email || !mensaje) {
         return res.status(400).json({ message: 'Por favor, rellena todos los campos.' });
     }
 
@@ -33,8 +33,8 @@ app.post('/enviar-correo', (req, res) => {
     const mailOptions = {
         from: process.env.EMAIL_USER,
         to: process.env.EMAIL_USER,  // Enviar el correo a tu dirección
-        subject: 'Nuevo mensaje de contacto',
-        text: `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`,
+        subject: `Asunto miPorfolio:${asunto}`,
+        text: `Nombre:\n\n${nombre}\n\nEmail:\n\n${email}\n\nMensaje:\n\n${mensaje}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

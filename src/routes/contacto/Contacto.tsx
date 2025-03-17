@@ -3,6 +3,7 @@ import Button from "../../lib/components/web/Button";
 import Input from "../../lib/components/web/Input";
 
 function Contacto() {
+    const [asunto, setAsunto] = useState('');
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
@@ -20,6 +21,7 @@ function Contacto() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
+                    asunto,
                     nombre,
                     email,
                     mensaje,
@@ -44,6 +46,12 @@ function Contacto() {
     return (
         <form id="contacto" className="flex flex-col w-full justify-center items-center p-5 gap-3" onSubmit={handleSubmit}>
             <div className="flex w-200 gap-8">
+            <Input
+                    placeholder="Asunto"
+                    className="outline-none border-1 rounded-lg p-2 flex-1"
+                    value={asunto}
+                    onChange={(e) => setAsunto(e.target.value)}
+                />
                 <Input
                     placeholder="Nombre"
                     className="outline-none border-1 rounded-lg p-2 flex-1"
