@@ -4,9 +4,9 @@ function AboutMe() {
   return (
     <div
       id="aboutMe"
-      className="flex flex-col w-full h-screen justify-center items-center p-5 gap-3"
+      className="flex flex-col w-full min-h-screen justify-center items-center p-5 gap-3"
     >
-      <article className="flex flex-col max-w-[90%] justify-center items-center gap-3 shadow-2xl p-20">
+      <article className="flex flex-col max-w-[90%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
       <div className="flex justify-center items-center">
         <p className="text-5xl">Sobre Mí</p>
       </div>

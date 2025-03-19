@@ -44,14 +44,18 @@ function Contacto() {
     };
 
     return (
-        <form id="contacto" className="flex flex-col w-full justify-center items-center p-5 gap-3" onSubmit={handleSubmit}>
-            <div className="flex w-200 gap-8">
+        <div id="contacto" className="flex w-full pb-10 items-end justify-center h-screen ">
+        <article className="flex flex-col max-w-[90%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
+        <form className="flex flex-col w-full justify-center items-center p-5 gap-3" onSubmit={handleSubmit}>
+            <div className="flex w-100 gap-8">
             <Input
                     placeholder="Asunto"
                     className="outline-none border-1 rounded-lg p-2 flex-1"
                     value={asunto}
                     onChange={(e) => setAsunto(e.target.value)}
                 />
+            </div>
+            <div className="flex w-200 gap-8">
                 <Input
                     placeholder="Nombre"
                     className="outline-none border-1 rounded-lg p-2 flex-1"
@@ -83,6 +87,8 @@ function Contacto() {
                 </Button>
             </div>
         </form>
+        </article>
+        </div>
     );
 }
 

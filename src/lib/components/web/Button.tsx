@@ -8,7 +8,7 @@ type Props = {
 }
 
 function Button({ children, className ,type, onClick, href, disabled }: Props ) {
-    const defaultClasses = "bg-green-500 cursor-pointer rounded-md border-2 p-3";
+    const defaultClasses = "bg-blue-500 cursor-pointer rounded-md border-2 p-3";
     const combinedClasses = `${defaultClasses} ${className}`.trim();
 
     // ANCHOR - Fijate en el return hay un operador ternario

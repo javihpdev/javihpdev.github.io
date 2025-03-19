@@ -33,8 +33,8 @@ app.post('/enviar-correo', (req, res) => {
     const mailOptions = {
         from: process.env.EMAIL_USER,
         to: process.env.EMAIL_USER,  // Enviar el correo a tu dirección
-        subject: `Asunto miPorfolio:${asunto}`,
-        text: `Nombre:\n\n${nombre}\n\nEmail:\n\n${email}\n\nMensaje:\n\n${mensaje}`,
+        subject: `Asunto miPorfolio: ${asunto}`,
+        text: `Nombre: ${nombre}\n\nEmail: ${email}\n\nMensaje: ${mensaje}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
