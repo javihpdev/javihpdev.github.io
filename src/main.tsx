@@ -17,7 +17,7 @@ createRoot(document.getElementById('porfolio')!).render(
   // {/* </StrictMode> */}
 
   // Div para el Main
- <div className="w-full h-screen">
+  <div className="w-full min-h-screen bg-gradient-to-b from-[#146e6e] to-[#2e9115]">
   <Nav />
   <Inicio />
   <AboutMe/>

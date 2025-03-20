@@ -6,7 +6,7 @@ type Props = {
 function Estudios( {}: Props){
     return(
         <div id="estudios" className="flex w-full items-center justify-center h-screen ">
-            <article className="flex flex-col max-w-[90%] justify-center items-center gap-3">
+            <article className="flex flex-col max-w-[90%] shadow-2xl p-10 justify-center items-center gap-3">
             <h1 className="text-5xl">Estudios</h1>
             <p>Formación Académica:
                 Desarrollo de Aplicaciones Web (Grado Superior): LinkiaFP.

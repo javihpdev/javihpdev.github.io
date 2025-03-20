@@ -34,7 +34,7 @@ function Link ( {href, className,children}: Props){
             {children}
             <span
                 ref={spanRef}
-                className="block bg-green-500 w-full h-0.5 -translate-x-20 transition-transform duration-300"
+                className="block bg-green-500 w-full h-0.5 -translate-x-20 transition-transform hover:duration-300"
             ></span>
         </a>
     );

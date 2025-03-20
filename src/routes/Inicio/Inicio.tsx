@@ -6,7 +6,7 @@ import Mail from "../../lib/components/icons/Mail.tsx";
 function Inicio() {
     return (
         <div id="inicio" className="flex w-full items-center justify-center gap-30 h-screen text-white">
-            <article className="flex  max-w-[90%] justify-center items-center gap-10 ">
+            <article className="flex  max-w-[90%] justify-center items-center gap-10 shadow-2xl p-10 ">
                 <section className="flex flex-col gap-5 items-center">
                 {/* Div titulo */}
                 <div className="flex flex-col gap-5 items-center">
