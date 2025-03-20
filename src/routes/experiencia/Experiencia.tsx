@@ -1,8 +1,4 @@
-type Props = {
-    className?: string;
-};
-
-function Experiencia( {}: Props){
+function Experiencia(){
     return(
 <div id="experiencia" className="flex w-full items-center justify-center h-screen ">
             <article className="flex flex-col max-w-[90%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">

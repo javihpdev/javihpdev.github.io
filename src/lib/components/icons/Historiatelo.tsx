@@ -1,14 +1,10 @@
-type Props = {
-    className?: string;
-  };
-
-function Historiatelo ({ className }: Props){
+function Historiatelo (){
     return(
         <section className="flex flex-col justify-center items-center p-5 shadow-[0_0_25px_5px] shadow-blue-500 rounded-2xl gap-10">
             {/* Div para la imagen del proyecto */}
             <div className="flex items-center">
             <a href="https://historiatelo.org/" target="_blank" className="shadow-[0_0_25px_5px]  shadow-blue-500 rounded-full">
-                <img src="public/images/historiatelo.png" alt="Imagen Proyecto Historiatelo" className="w-40 h-40 transition-all duration-500 hover:scale-110" />
+                <img src="/images/historiatelo.png" alt="Imagen Proyecto Historiatelo" className="w-40 h-40 transition-all duration-500 hover:scale-110" />
             </a>
             </div>
             {/* Div para las etiquetas de los lenguajes */}
