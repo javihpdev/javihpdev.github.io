@@ -4,7 +4,7 @@ function Gepro (){
             {/* Div para la imagen del proyecto */}
             <div className="flex items-center">
             <a href="https://historiatelo.org/" target="_blank" className="shadow-[0_0_25px_5px]  shadow-blue-500 rounded-full">
-                <img src="/images/LogoEmpresa.png" alt="Imagen Proyecto Historiatelo"
+                <img src="./images/LogoEmpresa.png" alt="Imagen Proyecto Historiatelo"
                     className="w-40 h-40 transition-all duration-500 hover:scale-110" />
             </a>
             </div>

@@ -1,10 +1,6 @@
 import Link from "../components/web/Link";
 
-
-
 function Nav() {
-
-   
 
   return (
     <div
