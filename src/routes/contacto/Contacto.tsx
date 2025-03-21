@@ -15,7 +15,7 @@ function Contacto() {
 
         try {
             // ANCHOR - Esta ruta que habra que cambiarla cuando monte la web
-            const response = await fetch('http://localhost:5000/enviar-correo', {
+            const response = await fetch('/api/enviar-correo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
