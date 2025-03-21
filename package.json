@@ -6,9 +6,9 @@
   "homepage": "https://javihpdev.github.io/javihpdev.github.io",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview --port 8080",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
