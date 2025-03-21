@@ -13,7 +13,7 @@ function Inicio() {
                 <h1 className="font-bold text-6xl">Soy Javier</h1>
                 <p>Desarrollador Web Full Stack con Experiencia en Tecnologías Modernas</p>
                 </div>
-                <Button className="hover:bg-blue-800 hover:scale-105" href="./public/files/CV Javier Hernandez Perez en el Paro.pdf">
+                <Button className="hover:bg-blue-800 hover:scale-105" href="/files/CV_JavierHernandezPerez.pdf">
                         Descargar CV
                     </Button>
                 {/* Div botones enlaces */}

@@ -16,7 +16,7 @@ function Historiatelo (){
                 <a href="https://www.typescriptlang.org/docs/"
                 className="p-1 rounded-4xl border-1 shadow-[0_0_10px_5px] shadow-blue-600 bg-gray-300 text-[0.8rem] text-blue-500 border-blue-500">
                     TYPESCRIPT</a>
-                <a href="https://www.typescriptlang.org/docs/"
+                <a href="https://tailwindcss.com/docs/installation/using-vite"
                 className="p-1 rounded-4xl border-1 shadow-[0_0_10px_5px] shadow-teal-600 bg-gray-300 text-[0.8rem] text-teal-500 border-teal-500">
                     TAILWINDCSS</a>
             </div>
