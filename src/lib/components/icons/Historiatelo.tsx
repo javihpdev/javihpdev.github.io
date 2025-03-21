@@ -1,8 +1,4 @@
-type Props = {
-    className?: string;
-  };
-
-function Historiatelo ({ className }: Props){
+function Historiatelo (){
     return(
         <section className="flex flex-col justify-center items-center p-5 shadow-[0_0_25px_5px] shadow-blue-500 rounded-2xl gap-10">
             {/* Div para la imagen del proyecto */}

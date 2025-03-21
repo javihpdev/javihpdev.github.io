@@ -1,8 +1,4 @@
-type Props = {
-  className?: string;
-};
-
-function Mail({ className }: Props) {
+function Mail() {
     return(
   <svg
     xmlns="http://www.w3.org/2000/svg"

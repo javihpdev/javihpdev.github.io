@@ -1,10 +1,8 @@
 import Link from "../components/web/Link";
 
-type Props = {
-  className?: string;
-};
 
-function Nav({ className }: Props) {
+
+function Nav() {
 
    
 
