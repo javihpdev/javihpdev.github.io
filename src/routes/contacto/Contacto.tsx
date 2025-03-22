@@ -12,10 +12,10 @@ function Contacto() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true);
-
+    
         try {
-            // ANCHOR - Esta ruta que habra que cambiarla cuando monte la web
-            const response = await fetch('https://javihpdev-github-io-backend.vercel.app/api/enviar-correo', {
+            const backendUrl = import.meta.env.VITE_BACKEND_URL; // Accede a la variable de entorno
+            const response = await fetch(backendUrl, { // Usar la variable de entorno
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
