@@ -14,8 +14,7 @@ function Contacto() {
         setLoading(true);
     
         try {
-            const backendUrl = import.meta.env.VITE_BACKEND_URL; // Accede a la variable de entorno
-            const response = await fetch(backendUrl, { // Usar la variable de entorno
+            const response = await fetch('https://javihpdev-github-io-backend.vercel.app/api/enviar-correo', { 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

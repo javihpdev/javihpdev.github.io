@@ -28,7 +28,7 @@ function Inicio() {
                 </section>
                 {/* Div dereho imagen */}
                 <div>
-            <img src="./src/routes/Inicio/perfil.png" alt="ImagenPortada" height={500} width={800} />
+            <img src="src/routes/Inicio/perfil.png" alt="ImagenPortada" height={500} width={800} />
             </div>
         </article>
         </div>
