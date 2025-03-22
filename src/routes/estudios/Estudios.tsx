@@ -5,10 +5,10 @@ type Props = {
 
 function Estudios( {}: Props){
     return(
-        <div id="estudios" className="flex w-full items-center justify-center h-screen ">
-            <article className="flex flex-col max-w-[90%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
+        <div id="estudios" className="flex w-full pt-20 items-center text-center justify-center min-h-screen ">
+            <article className="flex flex-col max-w-[95%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
             <h1 className="text-5xl">Estudios</h1>
-            <p>Formación Académica:
+            <p className="flex md:w-full w-70 flex-col gap-2 justify-center items-center">Formación Académica:
                 Desarrollo de Aplicaciones Web (Grado Superior): LinkiaFP.
                 Sólidos conocimientos en lenguajes de programación web:
                 JavaScript: Desarrollo de lógica interactiva en el lado del cliente.

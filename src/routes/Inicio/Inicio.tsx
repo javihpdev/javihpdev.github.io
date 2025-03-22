@@ -5,8 +5,8 @@ import Mail from "../../lib/components/icons/Mail.tsx";
 
 function Inicio() {
     return (
-        <div id="inicio" className="flex w-full items-center justify-center gap-30 mt-10 h-screen text-white">
-            <article className="flex  max-w-[90%] justify-center items-center gap-10 ">
+        <div id="inicio" className="flex w-full md:pt-20 items-center text-center justify-center h-screen max-h-screen text-white">
+            <article className="flex max-w-[90%] justify-center items-center gap-10 ">
                 <section className="flex flex-col gap-5 items-center">
                 {/* Div titulo */}
                 <div className="flex flex-col gap-5 items-center">
@@ -27,9 +27,9 @@ function Inicio() {
                 </div>
                 </section>
                 {/* Div dereho imagen */}
-                <div>
-            <img src="src/routes/Inicio/perfil.png" alt="ImagenPortada" height={500} width={800} />
-            </div>
+                <div className="hidden md:flex justify-center items-center">
+                    <img src="src/routes/Inicio/perfil.png" alt="ImagenPortada" height={500} width={800} />
+                </div>
         </article>
         </div>
     );

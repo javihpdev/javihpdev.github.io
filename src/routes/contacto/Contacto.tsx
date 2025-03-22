@@ -43,27 +43,27 @@ function Contacto() {
     };
 
     return (
-        <div id="contacto" className="flex w-full pb-10 items-end justify-center h-screen ">
-        <article className="flex flex-col max-w-[90%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
-        <form className="flex flex-col w-full justify-center items-center p-5 gap-3" onSubmit={handleSubmit}>
-            <div className="flex w-100 gap-8">
+        <div id="contacto" className="flex md:pt-20 justify-center items-center min-h-screen  ">
+        <article className="flex md:max-w-[90%] max-w-[95%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-10 md:p-20">
+        <form className="flex flex-col md:w-300 w-200 md:max-w-[90%] justify-center items-center md:p-5 gap-3" onSubmit={handleSubmit}>
+            <div className="flex w-full justify-center gap-8">
             <Input
                     placeholder="Asunto"
-                    className="outline-none border-1 rounded-lg p-2 flex-1"
+                    className="outline-none border-1 rounded-lg p-2 md:w-110 w-70 "
                     value={asunto}
                     onChange={(e) => setAsunto(e.target.value)}
                 />
             </div>
-            <div className="flex w-200 gap-8">
+            <div className="flex md:flex-row flex-col w-full gap-3 md:gap-8">
                 <Input
                     placeholder="Nombre"
-                    className="outline-none border-1 rounded-lg p-2 flex-1"
+                    className="outline-none w-full border-1 rounded-lg p-2"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                 />
                 <Input
                     placeholder="Email"
-                    className="outline-none border-1 rounded-lg p-2 flex-1"
+                    className="outline-none border-1 rounded-lg w-full p-2"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
@@ -72,13 +72,13 @@ function Contacto() {
                 rows={5}
                 cols={2}
                 placeholder="Mensaje"
-                className="w-200 resize-none outline-none border-1 rounded-md p-3"
+                className="w-full  resize-none outline-none border-1 rounded-md p-3"
                 value={mensaje}
                 onChange={(e) => setMensaje(e.target.value)}
             ></textarea>
-            <div className="flex justify-end w-200">
+            <div className="flex md:justify-end justify-center w-full ">
                 <Button
-                    className="px-5 hover:bg-green-800 hover:scale-105"
+                    className="px-5 hover:bg-blue-800 hover:scale-105"
                     type="submit"
                     disabled={loading}
                 >

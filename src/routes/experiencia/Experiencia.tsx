@@ -1,10 +1,10 @@
 function Experiencia(){
     return(
-<div id="experiencia" className="flex w-full items-center justify-center h-screen ">
-            <article className="flex flex-col max-w-[90%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
-            <h1 className="text-5xl">Experiencia Profesional</h1>
+<div id="experiencia" className="flex w-full md:pt-20 text-center items-center justify-center min-h-screen gap-3">
+            <article className="flex flex-col max-w-[95%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
+            <h1 className="flex md:w-full w-70 flex-col gap-2 text-5xl justify-center items-center">Experiencia Profesional</h1>
 
-<p>
+<p className="flex md:w-full w-70 flex-col gap-2 justify-center items-center">
 Tipomedia (Gestión, Diseño y Mantenimiento de Páginas Web):
 Participación activa en el desarrollo y mantenimiento de diversos proyectos web.
 Experiencia en la gestión integral de sitios web, desde el diseño inicial hasta la implementación y el mantenimiento continuo.
