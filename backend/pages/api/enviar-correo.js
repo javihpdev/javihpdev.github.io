@@ -1,5 +1,5 @@
 // pages/api/enviar-correo.js
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
