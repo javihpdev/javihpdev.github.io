@@ -15,7 +15,7 @@ function Contacto() {
 
         try {
             // ANCHOR - Esta ruta que habra que cambiarla cuando monte la web
-            const response = await fetch('/api/enviar-correo', {
+            const response = await fetch('https://javihpdev-github-io-backend.vercel.app/api/enviar-correo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
