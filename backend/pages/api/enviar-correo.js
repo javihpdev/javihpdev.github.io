@@ -2,9 +2,18 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
+    if (req.method === 'OPTIONS') {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+        res.status(200).end();
+        return;
+    }
+
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+
     if (req.method === 'POST') {
         const { asunto, nombre, email, mensaje } = req.body;
 
@@ -12,6 +21,7 @@ export default async function handler(req, res) {
             return res.status(400).json({ message: 'Por favor, rellena todos los campos.' });
         }
 
+        console.log('Creando transportador de nodemailer...'); // Log añadido
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
@@ -19,6 +29,7 @@ export default async function handler(req, res) {
                 pass: process.env.EMAIL_PASS,
             },
         });
+        console.log('Transportador creado.'); // Log añadido
 
         const mailOptions = {
             from: process.env.EMAIL_USER,
@@ -28,7 +39,9 @@ export default async function handler(req, res) {
         };
 
         try {
+            console.log('Enviando correo...'); // Log añadido
             await transporter.sendMail(mailOptions);
+            console.log('Correo enviado exitosamente.'); // Log añadido
             res.status(200).json({ message: 'Correo enviado exitosamente' });
         } catch (error) {
             console.error('Error al enviar el correo:', error);
