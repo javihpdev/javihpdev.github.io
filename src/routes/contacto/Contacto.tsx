@@ -78,7 +78,6 @@ function Contacto() {
             ></textarea>
             <div className="flex md:justify-end justify-center w-full ">
                 <Button
-                    className="px-5 hover:bg-blue-800 hover:scale-105"
                     type="submit"
                     disabled={loading}
                 >

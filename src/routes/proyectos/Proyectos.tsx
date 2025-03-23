@@ -1,5 +1,5 @@
-import Gepro from "../../lib/components/icons/Gepro";
-import Historiatelo from "../../lib/components/icons/Historiatelo";
+import Gepro from "../../lib/components/Gepro";
+import Historiatelo from "../../lib/components/Historiatelo";
 
 function Proyectos(){
     return(

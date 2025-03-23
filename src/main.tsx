@@ -6,6 +6,7 @@ import Estudios from "./routes/estudios/Estudios";
 import Experiencia from "./routes/experiencia/Experiencia";
 import Inicio from "./routes/Inicio/Inicio";
 import Proyectos from "./routes/proyectos/Proyectos";
+import Footer from "./lib/common/Footer";
 
 
 createRoot(document.getElementById('porfolio')!).render(
@@ -17,6 +18,7 @@ createRoot(document.getElementById('porfolio')!).render(
     <Proyectos />
     <Estudios />
     <Contacto />
+    <Footer />
   </div>
 );
 
