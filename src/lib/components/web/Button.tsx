@@ -33,7 +33,7 @@ const Button = ({children,type,disabled, href }: Props) => {
   ):(
     <StyledWrapper>
       <div>
-        <button disabled={disabled} className="c-button c-button--gooey"> {children}
+        <button disabled={disabled} type='submit' className="c-button c-button--gooey"> {children}
           <div className="c-button__blobs">
             <div />
             <div />
