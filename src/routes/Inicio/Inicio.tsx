@@ -13,7 +13,7 @@ function Inicio() {
                 <p>Desarrollador Web Full Stack con Experiencia en Tecnologías Modernas</p>
                 </div>
                 <Button>
-                    Descargar CV
+                    Descar CV
                 </Button>
                 {/* Div botones enlaces */}
                 <div className="flex gap-5">
