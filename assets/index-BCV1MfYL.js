@@ -58,7 +58,7 @@ Error generating stack: `+e.message+`
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    z-index: 1;
+    z-index: 50;
   }
 
   .c-button--gooey {
