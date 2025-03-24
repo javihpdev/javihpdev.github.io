@@ -12,7 +12,7 @@ function Inicio() {
                 <h1 className="font-bold text-6xl">Soy Javier</h1>
                 <p>Desarrollador Web Full Stack con Experiencia en Tecnologías Modernas</p>
                 </div>
-                <Button>
+                <Button href="/files/CV_JavierHernandezPerez.pdf">
                     Descargar CV
                 </Button>
                 {/* Div botones enlaces */}
@@ -27,7 +27,7 @@ function Inicio() {
                 </section>
                 {/* Div dereho imagen */}
                 <div className="hidden md:flex justify-center items-center">
-                    <img src="src/routes/Inicio/perfil.png" alt="ImagenPortada" height={300} width={600} />
+                    <img src="perfil.png" alt="ImagenPortada" height={300} width={600} />
                 </div>
         </article>
         </div>
