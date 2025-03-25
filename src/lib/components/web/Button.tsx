@@ -3,8 +3,7 @@ type Props = {
     children?: string;
     type?: "submit" | "reset" | "button";
     disabled?: boolean;
-    href?: string;
-    
+    href?: string;  
 }
 
 const Button = ({children,type,disabled, href }: Props) => {
@@ -66,14 +65,14 @@ const StyledWrapper = styled.div`
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    z-index: 1;
+    z-index: 0;
   }
 
   .c-button--gooey {
-    color: #06c8d9;
+    color: #51a2ff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: 4px solid #06c8d9;
+    border: 4px solid #2b7fff;
     border-radius: 0;
     position: relative;
     transition: all 700ms ease;
@@ -88,11 +87,11 @@ const StyledWrapper = styled.div`
     left: 0;
     bottom: -3px;
     right: -1px;
-    z-index: -1;
+    z-index: -2;
   }
 
   .c-button--gooey .c-button__blobs div {
-    background-color: #06c8d9;
+    background-color: #2b7fff;
     width: 34%;
     height: 100%;
     border-radius: 100%;

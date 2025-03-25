@@ -1,8 +1,43 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Button from "../../lib/components/web/Button";
 import Input from "../../lib/components/web/Input";
+import { h1 } from 'framer-motion/client';
 
 function Contacto() {
+    const contactoRef = useRef(null);
+      const [isScrolling, setIsScrolling] = useState(false);
+    
+      useEffect(() => {
+        const handleScroll = () => {
+          setIsScrolling(true);
+          clearTimeout(window.scrollTimeout);
+          window.scrollTimeout = setTimeout(() => {
+            setIsScrolling(false);
+          }, 4000); // Ajusta el tiempo de espera según sea necesario
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && isScrolling) {
+              entry.target.classList.add('opacity-100');
+            }
+          });
+        });
+    
+        if (contactoRef.current) {
+          observer.observe(contactoRef.current);
+        }
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+          if (contactoRef.current) {
+            observer.unobserve(contactoRef.current);
+          }
+        };
+      }, [isScrolling]);
+      
     const [asunto, setAsunto] = useState('');
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
@@ -43,29 +78,33 @@ function Contacto() {
     };
 
     return (
-        <div id="contacto" className="flex md:pt-20 justify-center items-center min-h-screen  ">
-        <article className="flex md:max-w-[90%] max-w-[95%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-10 md:p-20">
-        <form className="flex flex-col md:w-300 w-200 md:max-w-[90%] justify-center items-center md:p-5 gap-3" onSubmit={handleSubmit}>
-            <div className="flex w-full justify-center gap-8">
-            <Input
-                    placeholder="Asunto"
-                    className="outline-none border-1 rounded-lg p-2 md:w-110 w-70 "
-                    value={asunto}
-                    onChange={(e) => setAsunto(e.target.value)}
-                />
-            </div>
+        <div id="contacto" 
+        ref={contactoRef}
+      className="fade-in flex flex-col w-full min-h-screen md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000">
+        <article className="flex flex-col gap-10 md:max-w-[90%] max-w-[95%] justify-center items-center shadow-[0_0_25px_5px] shadow-blue-500 p-10 md:p-20">
+        <h1 className="text-5xl">Contacta conmigo aquí</h1>
+        <form className="flex flex-col md:w-300 w-200 max-w-[90%] justify-center items-center md:p-5 gap-3" onSubmit={handleSubmit}>
+            
             <div className="flex md:flex-row flex-col w-full gap-3 md:gap-8">
                 <Input
-                    placeholder="Nombre"
+                    placeholder="Tu Nombre"
                     className="outline-none w-full border-1 rounded-lg p-2"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                 />
                 <Input
-                    placeholder="Email"
+                    placeholder="Tu Email"
                     className="outline-none border-1 rounded-lg w-full p-2"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                />
+            </div>
+            <div className="flex w-full gap-8">
+            <Input
+                    placeholder="Asunto"
+                    className="outline-none border-1 rounded-lg p-2 w-full "
+                    value={asunto}
+                    onChange={(e) => setAsunto(e.target.value)}
                 />
             </div>
             <textarea
