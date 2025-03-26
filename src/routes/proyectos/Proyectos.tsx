@@ -44,16 +44,6 @@ function Proyectos(){
       >
             <article className="flex flex-col w-full max-w-[95%] justify-center items-center gap-10 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
             <h1 className="text-5xl">Proyectos</h1>
-            <ul className="flex md:w-full sm:w-150 w-70  flex-col gap-2 justify-center items-center">
-                Proyectos realizados:
-                <li>-Página web de un restaurante: HTML, CSS, JavaScript.</li>
-                <li>-Página web de una tienda de ropa: HTML, CSS, JavaScript.</li>
-                <li>-Página web de un blog: HTML, CSS, JavaScript.</li>
-                <li>-Página web de un fotógrafo: HTML, CSS, JavaScript.</li>
-                <li>-Página web de un hotel: HTML, CSS, JavaScript.</li>
-                <li>-Página web de una agencia de viajes: HTML, CSS, JavaScript.</li>
-                </ul>
-
                 <div className="flex md:flex-row flex-col max-w-full justify-center items-center gap-10">
                 <Historiatelo />
                 <Gepro />

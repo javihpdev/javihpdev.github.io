@@ -7,7 +7,11 @@ function Historiatelo (){
                 <img src="./images/historiatelo.png" alt="Imagen Proyecto Historiatelo" className="w-40 h-40transition-all duration-500 hover:scale-110" />
             </a>
             </div>
-            <span className="">Historiatelo</span>
+            <div className="flex flex-col gap-4">
+            <span className="text-2xl underline">Historiatelo</span>
+            <span>-Página web Historiatelo: Svelte, Tailwindcss, TypeScrip</span>
+            <span>Historiatelo aspira a ser una plataforma de acceso libre para la edición y consulta de contenido diverso elaborado por la comunidad global.</span>
+            </div>
             {/* Div para las etiquetas de los lenguajes */}
             <div className="flex items-center gap-3">
                 <a href="https://svelte.dev/docs/svelte/overview" target="_blank"

@@ -12,7 +12,7 @@ function Gepro() {
           />
         </Link>
       </div>
-      <span className="">GePro</span>
+      <span className="text-2xl underline ">GePro</span>
       <div className="flex items-center gap-3">
         <a
           href="https://www.php.net/manual/es/"
