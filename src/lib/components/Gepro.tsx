@@ -12,7 +12,13 @@ function Gepro() {
           />
         </Link>
       </div>
-      <span className="text-2xl underline ">GePro</span>
+      <span className="text-2xl  font-bold">GePro</span>
+      <span>Es una aplicación web diseñada para la administración de proyectos, permitiendo la gestión de
+        múltiples proyectos, cada uno con sus respectivos grupos de trabajo y empleados asignados.
+        Ofrece un sistema de gestión de base de datos para administrar los proyectos, grupos,
+        empleados, reuniones y tareas. La plataforma proporcionará una interfaz intuitiva tanto para
+        empleados como para administradores.
+      </span>
       <div className="flex items-center gap-3">
         <a
           href="https://www.php.net/manual/es/"

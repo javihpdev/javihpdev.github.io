@@ -8,8 +8,8 @@ function Historiatelo (){
             </a>
             </div>
             <div className="flex flex-col gap-4">
-            <span className="text-2xl underline">Historiatelo</span>
-            <span>-Página web Historiatelo: Svelte, Tailwindcss, TypeScrip</span>
+            <span className="text-2xl font-bold">Historiatelo</span>
+            <span>-Página y aplicación web Historiatelo: Svelte, Tailwindcss, TypeScrip</span>
             <span>Historiatelo aspira a ser una plataforma de acceso libre para la edición y consulta de contenido diverso elaborado por la comunidad global.</span>
             </div>
             {/* Div para las etiquetas de los lenguajes */}

@@ -3,12 +3,12 @@ function Porfolio (){
         <section className="flex flex-col justify-center items-center w-80 p-5 shadow-[0_0_25px_5px] shadow-blue-500 rounded-2xl gap-5">
             {/* Div para la imagen del proyecto */}
             <div className="flex flex-col gap-5 items-center">
-            <a href="https://javihpdev.github.io/" target="_blank" className="shadow-[0_0_25px_5px]  shadow-blue-500 rounded-full">
+            <a href="https://github.com/javihpdev/javihpdev.github.io" target="_blank" className="shadow-[0_0_25px_5px]  shadow-blue-500 rounded-full">
                 <img src="./images/imagenPorfolio.png" alt="Imagen Proyecto Historiatelo" className="w-40 h-40 rounded-full bg-white transition-all duration-500 hover:scale-110" />
             </a>
-            <span className="text-2xl underline">Porfolio Personal</span>
+            <span className="text-2xl font-bold">Porfolio Personal</span>
             <span>-Página web Porfolio Personal: React, Tailwindcss, TypeScript.</span>
-            <span></span>
+            <span>Muestra información sobre mí y mis proyectos, para ver el código fuente clica en la imagen!</span>
             </div>
             {/* Div para las etiquetas de los lenguajes */}
             <div className="flex items-center gap-3">

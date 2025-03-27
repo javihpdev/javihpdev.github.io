@@ -93,6 +93,7 @@ function Contacto() {
                     onChange={(e) => setNombre(e.target.value)}
                 />
                 <Input
+                    type="email"
                     placeholder="Tu Email"
                     className="outline-none border-1 rounded-lg w-full p-2"
                     value={email}
