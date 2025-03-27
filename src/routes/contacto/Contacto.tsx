@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Button from "../../lib/components/web/Button";
 import Input from "../../lib/components/web/Input";
-import { h1 } from 'framer-motion/client';
+
 
 function Contacto() {
     const contactoRef = useRef(null);
@@ -41,6 +41,7 @@ function Contacto() {
     const [asunto, setAsunto] = useState('');
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
     const [mensaje, setMensaje] = useState('');
     const [loading, setLoading] = useState(false);
 
@@ -55,9 +56,10 @@ function Contacto() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    asunto,
-                    nombre,
-                    email,
+                  nombre,
+                  email,
+                  phone,
+                  asunto,
                     mensaje,
                 }),
             });
@@ -98,6 +100,13 @@ function Contacto() {
                     className="outline-none border-1 rounded-lg w-full p-2"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                />
+                <Input
+                    type="number"
+                    placeholder="Telélofo (opcional)"
+                    className="outline-none border-1 rounded-lg w-full p-2"
+                    value={email}
+                    onChange={(e) => setPhone(e.target.value)}
                 />
             </div>
             <div className="flex w-full gap-8">

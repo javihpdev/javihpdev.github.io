@@ -42,7 +42,7 @@ function Estudios() {
       ref={estudiosRef}
       className="fade-in flex flex-col w-full min-h-screen md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000"
     >
-      <article className="flex flex-col max-w-[95%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
+      <article className="flex flex-col max-w-[95%] justify-center items-center gap-10 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
         <h1 className="text-5xl">Estudios</h1>
         <p className="flex md:w-full w-70 flex-col gap-2 justify-center items-center">
           Formación Académica: Desarrollo de Aplicaciones Web (Grado Superior):
@@ -51,6 +51,9 @@ function Estudios() {
           Desarrollo de lógica del lado del servidor. HTML: Estructuración de
           contenido web. CSS: Estilos y diseño visual de páginas web.
         </p>
+        <a href="https://linkiafp.es/?utm_source=google&utm_medium=cpc&utm_campaign=Search_bofu_ON_ES_AO_Pros_Brand_Generic&gad_source=1" target="_blank">
+          <img src="./images/nlogo-linkia.webp" alt="logo linkiafp" className="w-50" />
+        </a>
       </article>
     </div>
   );
