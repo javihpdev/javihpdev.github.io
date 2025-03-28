@@ -14,15 +14,8 @@ function Nav() {
   };
 
   return (
-    <div className="flex justify-center items-center  fixed z-50 top-0 w-full max-w-full p-5 shadow-lg bg-blue- shadow-blue-500 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800">
-      {/* Menu Hamburguesa (visible en pantallas pequeñas) */}
-      <div className="pt-2 md:pt-0">
-        <button className="p-1 md:hidden flex flex-col gap-1" aria-label="Boton Menu" onClick={toggleMenu}>
-          <span className={`block h-1 w-6 bg-blue-400 transition-all duration-500 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-          <span className={`block h-1 w-6 bg-blue-400 transition-all duration-500 ${isOpen ? 'opacity-0' : ''}`}></span>
-          <span className={`block h-1 w-6 bg-blue-400 transition-all duration-500 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
-        </button>
-      </div>
+    <div className="flex flex-col md:flex-row justify-center items-center fixed z-50 top-0 w-full max-w-full p-5 shadow-lg bg-blue- shadow-blue-500 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800">
+ 
 
       {/* Menu desplegable (visible en pantallas pequeñas) */}
       <div className={`md:hidden absolute z-10 text-center top-full right-0 w-full bg-gray-800 p-5 flex flex-col gap-4 transition-all duration-1000 ease-in-out ${isOpen ? 'max-h-90 opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -35,9 +28,17 @@ function Nav() {
       </div>
 
       {/* Div todo junto en el md */}
-      <div className="flex gap-6 ">
+      <div className="flex  gap-3 w-full justify-center items-center md:justify-end ">
         {/* Logo */}
         <p className="flex w-50 text-3xl justify-center items-center md:text-5xl">JhpDev</p>
+
+        <div className="flex justify-center items-center pt-2 md:pt-0">
+        <button className="p-1 md:hidden flex flex-col gap-1" aria-label="Boton Menu" onClick={toggleMenu}>
+          <span className={`block h-1 w-6 bg-blue-400 transition-all duration-500 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+          <span className={`block h-1 w-6 bg-blue-400 transition-all duration-500 ${isOpen ? 'opacity-0' : ''}`}></span>
+          <span className={`block h-1 w-6 bg-blue-400 transition-all duration-500 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+        </button>
+      </div>
 
         {/* div de enlaces */}
         <div className={`md:flex w-full max-w-full flex-wrap pr-10 justify-end items-center gap-10 ${isOpen ? 'hidden' : 'hidden md:flex'}`}>
