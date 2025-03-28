@@ -37,9 +37,9 @@ function Experiencia(){
         }, [isScrolling]);
     return(
 <div id="experiencia" ref={experienciaRef}
-      className="fade-in flex flex-col w-full min-h-screen md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000"
+      className="fade-in flex flex-col w-full md:min-h-screen md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000"
     >
-            <article className="flex flex-col max-w-[95%] justify-center items-center gap-11 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
+            <article className="flex flex-col max-w-[95%] justify-center items-center gap-10 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
             <h1 className="flex md:w-full w-70 flex-col gap-2 text-5xl justify-center items-center">Experiencia Profesional</h1>
 
 <p className="flex md:w-full w-70 flex-col gap-2 justify-center items-center">

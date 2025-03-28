@@ -88,7 +88,7 @@ function Contacto() {
     return (
         <div id="contacto" 
         ref={contactoRef}
-      className="fade-in flex flex-col w-full min-h-screen md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000">
+      className="fade-in flex flex-col w-full md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000">
         <article className="flex flex-col gap-10 md:max-w-[90%] max-w-[95%] justify-center items-center shadow-[0_0_25px_5px] shadow-blue-500 p-10 md:p-20">
         <h1 className="text-5xl">Contacta conmigo aquí</h1>
         <form className="flex flex-col md:w-300 w-200 max-w-[90%] justify-center items-center md:p-5 gap-3" onSubmit={handleSubmit}>

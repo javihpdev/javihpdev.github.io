@@ -5,8 +5,8 @@ import Button from "../../lib/components/web/Button.tsx";
 function Inicio() {
     return (
         <div id="inicio" 
-        className="flex w-full md:pt-20 items-center text-center justify-center  h-screen max-h-screen text-white">
-            <article className="flex md:flex-row flex-col max-w-[95%] justify-center items-center gap-10 p-20 shadow-[0_0_25px_5px] shadow-blue-500 ">
+        className="flex w-full md:pt-20 items-center text-center justify-center md:min-h-screen text-white">
+            <article className="flex md:flex-row flex-col max-w-[95%] md:pl-15 pt-10 mt-20 md:mt-0 justify-center items-center gap-10 shadow-[0_0_25px_5px] shadow-blue-500 ">
                 <section className="flex flex-col gap-5 items-center">
                 {/* Div titulo */}
                 <div className="flex flex-col gap-5 items-center">
@@ -27,7 +27,7 @@ function Inicio() {
                 </div>
                 </section>
                 {/* Div dereho imagen */}
-                <div className="hidden md:flex justify-center items-center">
+                <div className="flex justify-center items-center">
                     <img src="./images/Diseño sin título.svg" alt="ImagenPortada" className=" h-60 w-60 md:h-120 md:w-100" />
                 </div>
         </article>
