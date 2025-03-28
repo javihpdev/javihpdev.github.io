@@ -15,9 +15,9 @@ export default async function handler(req, res) {
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
     if (req.method === 'POST') {
-        const { asunto, nombre, email, mensaje } = req.body;
+        const { asunto, nombre, email,phone, mensaje } = req.body;
 
-        if (!asunto || !nombre || !email || !mensaje) {
+        if (!asunto || !nombre || !email || !phone || !mensaje) {
             return res.status(400).json({ message: 'Por favor, rellena todos los campos.' });
         }
 
@@ -35,7 +35,7 @@ export default async function handler(req, res) {
             from: process.env.EMAIL_USER,
             to: process.env.EMAIL_USER,
             subject: `Asunto miPorfolio: ${asunto}`,
-            text: `Nombre: ${nombre}\n\nEmail: ${email}\n\nMensaje: ${mensaje}`,
+            text: `Nombre: ${nombre}\n\nEmail: ${email}\n\nTeléfono: ${phone}\n\nMensaje: ${mensaje}`,
         };
 
         try {

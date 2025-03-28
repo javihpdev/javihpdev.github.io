@@ -60,7 +60,7 @@ function Contacto() {
                   email,
                   phone,
                   asunto,
-                    mensaje,
+                  mensaje,
                 }),
             });
 
