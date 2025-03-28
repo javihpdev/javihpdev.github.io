@@ -69,6 +69,12 @@ function Contacto() {
 
             if (response.ok) {
                 alert('Mensaje enviado exitosamente!');
+                setNombre('');
+                setEmail('');
+                setPhone('');
+                setAsunto('');
+                setMensaje('');
+
             } else {
                 alert(`Hubo un error: ${responseJson.message}`);
             }
@@ -103,9 +109,9 @@ function Contacto() {
                 />
                 <Input
                     type="number"
-                    placeholder="Telélofo (opcional)"
+                    placeholder="Teléfono (opcional)"
                     className="outline-none border-1 rounded-lg w-full p-2"
-                    value={email}
+                    value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                 />
             </div>

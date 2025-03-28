@@ -44,7 +44,7 @@ function Proyectos(){
       >
             <article className="flex flex-col w-full max-w-[95%] justify-center items-center gap-10 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
             <h1 className="text-5xl">Proyectos</h1>
-                <div className="flex md:flex-row flex-col max-w-full justify-center items-center gap-10">
+                <div className="flex md:flex-row flex-col flex-wrap max-w-full justify-center items-center gap-10">
                 <Historiatelo />
                 <Gepro />
                 <Porfolio />
