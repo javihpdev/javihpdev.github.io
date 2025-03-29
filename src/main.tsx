@@ -13,16 +13,18 @@ import GeproBeta from "./lib/components/GeProBeta";
 
 createRoot(document.getElementById('porfolio')!).render(
   <BrowserRouter>
-    <div className="w-full min-h-screen gap-20 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800">
+    <div className="w-full min-h-screen  bg-gradient-to-br from-[#F5F0E8] via-[#B8A89A] to-[#5D4B3F]">
       <Nav />
-      <Routes>
+      <Routes >
         <Route path="/" element={<>
+        <div className="flex flex-col gap-20">
           <Inicio />
           <AboutMe />
           <Experiencia />
           <Proyectos />
           <Estudios />
           <Contacto />
+          </div>
         </>} />
         <Route path="/gepro-beta" element={<GeproBeta />} />
       </Routes>

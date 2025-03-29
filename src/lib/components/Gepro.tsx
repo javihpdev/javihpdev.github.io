@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 function Gepro() {
   return (
-    <section className="flex flex-col justify-center items-center p-5 w-80 shadow-[0_0_25px_5px] shadow-blue-500 rounded-2xl gap-5 ">
+    <section className="flex flex-col justify-center items-center p-5 w-90 shadow-[0_0_25px_5px] shadow-[#3D3027] rounded-2xl gap-5 ">
       <div className="flex items-center">
-        <Link to="/gepro-beta" className="shadow-[0_0_25px_5px] shadow-blue-500 rounded-full">
+        <Link to="/gepro-beta" className="shadow-[0_0_25px_5px] shadow-[#3D3027] rounded-full">
           <img
             src="./images/LogoEmpresa.png"
             alt="Imagen Proyecto Historiatelo"

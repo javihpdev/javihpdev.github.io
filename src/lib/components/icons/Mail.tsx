@@ -6,7 +6,7 @@ function Mail() {
     height="30"
     viewBox="0 0 24 24"
     fill="none"
-    stroke="#fcfcfc"
+    stroke="#2D2420"
     stroke-width="2"
     stroke-linecap="round"
     stroke-linejoin="round"

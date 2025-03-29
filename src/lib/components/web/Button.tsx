@@ -69,10 +69,10 @@ const StyledWrapper = styled.div`
   }
 
   .c-button--gooey {
-    color: #51a2ff;
+    color: #2D2420;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: 4px solid #2b7fff;
+    border: 4px solid #2D2420;
     border-radius: 0;
     position: relative;
     transition: all 700ms ease;
@@ -91,7 +91,7 @@ const StyledWrapper = styled.div`
   }
 
   .c-button--gooey .c-button__blobs div {
-    background-color: #2b7fff;
+    background-color: #2D2420;
     width: 34%;
     height: 100%;
     border-radius: 100%;

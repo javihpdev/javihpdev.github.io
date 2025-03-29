@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { asunto, nombre, email,phone, mensaje } = req.body;
 
-        if (!asunto || !nombre || !email || !phone || !mensaje) {
+        if (!asunto || !nombre || !email || !mensaje) {
             return res.status(400).json({ message: 'Por favor, rellena todos los campos.' });
         }
 

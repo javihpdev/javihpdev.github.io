@@ -47,7 +47,7 @@ function AboutMe() {
       ref={aboutMeRef}
       className="fade-in flex flex-col w-full md:min-h-screen md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000"
     >
-      <article className="flex flex-col max-w-[95%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-blue-500 p-20">
+      <article className="flex flex-col w-full max-w-[95%] justify-center items-center gap-3 shadow-[0_0_25px_5px] shadow-[#3D3027] p-20">
         <div className="flex justify-center items-center">
           <p className="text-5xl w-70">Sobre Mí</p>
         </div>

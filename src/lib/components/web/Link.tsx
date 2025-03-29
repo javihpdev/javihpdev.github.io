@@ -36,7 +36,7 @@ function Link ( {href, className,children, onClick}: Props){
             {children}
             <span
                 ref={spanRef}
-                className="block bg-blue-500 shadow-lg shadow-blue-500 w-full h-0.5 md:-translate-x-30 md:transition-transform md:duration-500"
+                className="block bg-[#5D4B3F] shadow-lg w-full h-0.5 md:-translate-x-30 md:transition-transform md:duration-500"
             ></span>
         </a>
     );

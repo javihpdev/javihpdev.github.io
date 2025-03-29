@@ -1,9 +1,9 @@
 function Historiatelo (){
     return(
-        <section className="flex flex-col justify-center items-center w-80 p-5 shadow-[0_0_25px_5px] shadow-blue-500 rounded-2xl gap-5">
+        <section className="flex flex-col justify-center items-center w-90 p-5 shadow-[0_0_25px_5px] shadow-[#3D3027] rounded-2xl gap-5">
             {/* Div para la imagen del proyecto */}
             <div className="flex items-center">
-            <a href="https://historiatelo.org/" target="_blank" className="shadow-[0_0_25px_5px]  shadow-blue-500 rounded-full">
+            <a href="https://historiatelo.org/" target="_blank" className="shadow-[0_0_25px_5px]  shadow-[#3D3027] rounded-full">
                 <img src="./images/historiatelo.png" alt="Imagen Proyecto Historiatelo" className="w-40 h-40transition-all duration-500 hover:scale-110" />
             </a>
             </div>

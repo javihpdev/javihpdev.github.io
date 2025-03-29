@@ -89,7 +89,7 @@ function Contacto() {
         <div id="contacto" 
         ref={contactoRef}
       className="fade-in flex flex-col w-full md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000">
-        <article className="flex flex-col gap-10 md:max-w-[90%] max-w-[95%] justify-center items-center shadow-[0_0_25px_5px] shadow-blue-500 p-10 md:p-20">
+        <article className="flex flex-col gap-10 md:max-w-[90%] max-w-[95%] justify-center items-center shadow-[0_0_25px_5px] shadow-[#3D3027] p-10 md:p-20">
         <h1 className="text-5xl">Contacta conmigo aquí</h1>
         <form className="flex flex-col md:w-300 w-200 max-w-[90%] justify-center items-center md:p-5 gap-3" onSubmit={handleSubmit}>
             
@@ -118,7 +118,7 @@ function Contacto() {
             <div className="flex w-full gap-8">
             <Input
                     placeholder="Asunto"
-                    className="outline-none border-1 rounded-lg p-2 w-full "
+                    className="outline-none border-1 rounded-lg p-2 w-full"
                     value={asunto}
                     onChange={(e) => setAsunto(e.target.value)}
                 />
@@ -127,11 +127,11 @@ function Contacto() {
                 rows={5}
                 cols={2}
                 placeholder="Mensaje"
-                className="w-full  resize-none outline-none border-1 rounded-md p-3"
+                className="w-full placeholder-[#2D2420] resize-none outline-none border-1 rounded-md p-3"
                 value={mensaje}
                 onChange={(e) => setMensaje(e.target.value)}
             ></textarea>
-            <div className="flex md:justify-end justify-center w-full ">
+            <div className="flex md:justify-end justify-center w-full "> 
                 <Button
                     type="submit"
                     disabled={loading}

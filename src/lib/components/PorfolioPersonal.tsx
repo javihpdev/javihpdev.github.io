@@ -1,9 +1,9 @@
 function Porfolio (){
     return(
-        <section className="flex flex-col justify-center items-center w-80 p-5 shadow-[0_0_25px_5px] shadow-blue-500 rounded-2xl gap-5">
+        <section className="flex flex-col justify-center items-center w-90 p-5 shadow-[0_0_25px_5px] shadow-[#3D3027] rounded-2xl gap-5">
             {/* Div para la imagen del proyecto */}
             <div className="flex flex-col gap-5 items-center">
-            <a href="https://github.com/javihpdev/javihpdev.github.io" target="_blank" className="shadow-[0_0_25px_5px]  shadow-blue-500 rounded-full">
+            <a href="https://github.com/javihpdev/javihpdev.github.io" target="_blank" className="shadow-[0_0_25px_5px]  shadow-[#3D3027] rounded-full">
                 <img src="./images/imagenPorfolio.png" alt="Imagen Proyecto Historiatelo" className="w-40 h-40 rounded-full bg-white transition-all duration-500 hover:scale-110" />
             </a>
             <span className="text-2xl font-bold">Porfolio Personal</span>
