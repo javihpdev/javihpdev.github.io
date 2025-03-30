@@ -48,7 +48,6 @@ function Contacto() {
     const [loading, setLoading] = useState(false);
 
     const phoneRegex = /^[0-9]+$/;
-    const nombreRegex = /^[a-zA-Z]{2,}$/
 
     /**
      * Funcion para la expresion regular del telefono
@@ -133,14 +132,14 @@ function Contacto() {
                         <Input
                             type="text"
                             placeholder="Teléfono (opcional)"
-                            className={`outline-none border-1 rounded-lg w-full p-2 ${phoneError ? 'border-red-800' : ''}`} // Añadir borde rojo si hay error
+                            className={`outline-none border-1 rounded-lg w-full p-2 ${phoneError ? 'border-red-800' : ''}`}
                             value={phone}
                             onChange={handlePhoneChange}
                         />
                     </div>
                     {errorNombre && <p className='text-red-800'>Introduce un nombre mayor o igual a dos carácteres</p>}
 
-                    {phoneError && <p className="text-red-800">Por favor, introduce solo números.</p>} {/* Mostrar mensaje de error */}
+                    {phoneError && <p className="text-red-800">Por favor, introduce solo números.</p>} 
                     <div className="flex w-full gap-8">
                         <Input placeholder="Asunto" className="outline-none border-1 rounded-lg p-2 w-full" value={asunto} onChange={(e) => setAsunto(e.target.value)} />
                     </div>
