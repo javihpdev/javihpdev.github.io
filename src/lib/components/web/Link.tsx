@@ -28,7 +28,7 @@ function Link ( {href, className,children, onClick}: Props){
     return (
         <a
             href={href}
-            className={`${className} flex flex-col overflow-hidden`}
+            className={`${className} flex flex-col font-semibold overflow-hidden`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             onClick={onClick}

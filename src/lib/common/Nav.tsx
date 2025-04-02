@@ -14,11 +14,9 @@ function Nav() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center fixed z-50 top-0 w-full max-w-full p-5 shadow-lg shadow-[#3D3027] bg-gradient-to-br from-[#F5F0E8] via-[#B8A89A] to-[#5D4B3F]">
- 
-
+    <div className="flex flex-col justify-center items-center fixed z-50 top-0 w-full max-w-full p-5 shadow-lg shadow-[#3D3027] bg-gradient-to-br from-[#F5F0E8] via-[#B8A89A] to-[#5D4B3F]">
       {/* Menu desplegable (visible en pantallas pequeñas) */}
-      <div className={`md:hidden absolute z-10 text-center top-full right-0 w-full bg-gradient-to-br from-[#F5F0E8] via-[#B8A89A] to-[#5D4B3F] p-5 flex flex-col gap-4 transition-all duration-1000 ease-in-out ${isOpen ? 'max-h-90 opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`lg:hidden absolute z-10 text-center top-full right-0 w-full bg-gradient-to-br from-[#F5F0E8] via-[#B8A89A] to-[#5D4B3F] p-5 flex flex-col gap-4 transition-all duration-1000 ease-in-out ${isOpen ? 'max-h-90 opacity-100' : 'max-h-0 opacity-0'}`}>
         <Link href="#inicio" className="scroll-auto text-lg hover:text-[#5D4B3F] " onClick={handleLinkClick}>Inicio</Link>
         <Link href="#aboutMe" className="scroll-auto text-lg hover:text-[#5D4B3F] " onClick={handleLinkClick}>Sobre Mí</Link>
         <Link href="#experiencia" className="scroll-auto text-lg hover:text-[#5D4B3F]" onClick={handleLinkClick}>Experiencia</Link>
@@ -28,12 +26,12 @@ function Nav() {
       </div>
 
       {/* Div todo junto en el md */}
-      <div className="flex  gap-3 w-full justify-center items-center md:justify-end ">
+      <div className="flex gap-3 w-full justify-center items-center lg:justify-end ">
         {/* Logo */}
         <p className="flex w-50 text-3xl justify-center items-center md:text-5xl">JhpDev</p>
 
-        <div className="flex justify-center items-center pt-2 md:pt-0">
-        <button className="p-1 md:hidden flex flex-col gap-1" aria-label="Boton Menu" onClick={toggleMenu}>
+        <div className="flex  justify-center items-center pt-2 md:pt-0">
+        <button className="p-1 lg:hidden flex flex-col gap-1" aria-label="Boton Menu" onClick={toggleMenu}>
           <span className={`block h-1 w-6 bg-[#5D4B3F] transition-all duration-500 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
           <span className={`block h-1 w-6 bg-[#5D4B3F] transition-all duration-500 ${isOpen ? 'opacity-0' : ''}`}></span>
           <span className={`block h-1 w-6 bg-[#5D4B3F] transition-all duration-500 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
@@ -41,7 +39,7 @@ function Nav() {
       </div>
 
         {/* div de enlaces */}
-        <div className={`md:flex w-full max-w-full flex-wrap pr-10 justify-end items-center gap-10 ${isOpen ? 'hidden' : 'hidden md:flex'}`}>
+        <div className={`lg:flex w-full max-w-full flex-wrap pr-10 md:justify-center md:items-center lg:justify-end lg:items-center gap-10 ${isOpen ? 'hidden' : 'hidden lg:flex'}`}>
           {/* Inicio */}
           <Link href="#inicio" className="scroll-auto text-lg py-2 hover:text-[#5D4B3F] hover:duration-500">Inicio</Link>
           {/* About Me */}

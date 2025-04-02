@@ -40,13 +40,15 @@ function Proyectos(){
         }, [isScrolling]);
     return(
         <div id="proyectos" ref={proyectosRef}
-        className="fade-in flex flex-col w-full md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000"
+        className="fade-in flex flex-col w-full justify-center text-center items-center gap-10 opacity-0 transition-opacity duration-4000"
       >
-            <article className="flex flex-col w-full max-w-[95%] justify-center items-center gap-10 shadow-[0_0_25px_5px] shadow-[#3D3027] p-20">
-            <h1 className="text-5xl">Proyectos</h1>
-                <div className="flex md:flex-row flex-col md:flex-wrap max-w-full justify-center items-center gap-10">
+            <article className="flex flex-col w-full max-w-[95%] justify-center rounded-2xl items-center gap-10 shadow-[0_0_25px_5px] shadow-[#3D3027] pt-20">
+            <h1 className="text-5xl font-bold">Proyectos</h1>
+                <div className="flex md:flex-row flex-col md:flex-wrap max-w-full pb-10 pt-10 justify-center items-center gap-10">
                 <Historiatelo />
+                <span className="block md:hidden h-0.5 w-full bg-[#2D2420]"></span>
                 <Gepro />
+                <span className="block md:hidden h-0.5 w-full bg-[#2D2420]"></span>
                 <Porfolio />
                 </div>
             </article>

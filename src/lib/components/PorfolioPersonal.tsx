@@ -1,6 +1,6 @@
 function Porfolio (){
     return(
-        <section className="flex flex-col justify-center items-center w-90 p-5 shadow-[0_0_25px_5px] shadow-[#3D3027] rounded-2xl gap-5">
+        <section className="flex flex-col justify-center items-center w-90 p-5 rounded-none shadow-none md:shadow-[0_0_25px_5px] md:shadow-[#3D3027] md:rounded-2xl gap-5">
             {/* Div para la imagen del proyecto */}
             <div className="flex flex-col gap-5 items-center">
             <a href="https://github.com/javihpdev/javihpdev.github.io" target="_blank" className="shadow-[0_0_25px_5px]  shadow-[#3D3027] rounded-full">
