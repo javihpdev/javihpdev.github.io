@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom';
+import LinkExternal from './icons/LinkExternal';
 
 function Gepro() {
   return (
     <section className="flex flex-col justify-center items-center p-5 w-90 rounded-none shadow-none lg:shadow-[0_0_25px_5px] lg:shadow-[#3D3027] lg:rounded-2xl gap-5 ">
-      <div className="flex items-center">
-        <Link to="/gepro-beta" className="shadow-[0_0_25px_5px] shadow-[#3D3027] rounded-full">
+      <div className="flex relative justify-center items-center transition-all duration-500 hover:scale-110">
+        <Link to="/gepro-beta" className="shadow-[0_0_25px_5px]  shadow-[#3D3027] rounded-full w-40 h-40">
           <img
             src="./images/LogoEmpresa.png"
             alt="Imagen Proyecto Historiatelo"
-            className="w-40 h-40 transition-all duration-500 hover:scale-110"
+            className="w-40 h-40"
           />
         </Link>
+        <LinkExternal classNameLink="absolute top-0 right-[-20px]" />
       </div>
       <span className="text-2xl  font-bold">GePro</span>
       <span>Es una aplicación web diseñada para la administración de proyectos, permitiendo la gestión de

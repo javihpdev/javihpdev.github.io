@@ -1,9 +1,14 @@
 import { createContext, useContext, useEffect } from "react";
+import { ReactNode } from "react";
+import { useCenteredScroll } from "../useCentredScroll";
+
 
 const AnimationContext = createContext({});
-import { ReactNode } from "react";
 
 export function AnimationProvider({ children }: { children: ReactNode }) {
+  // Usar el hook de desplazamiento centrado
+  useCenteredScroll();
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {

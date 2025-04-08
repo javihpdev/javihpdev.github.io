@@ -2,7 +2,7 @@ function AboutMe() {
   return (
     <div
       id="aboutMe"
-      className="fade-in animate-on-scroll flex flex-col w-full md:min-h-screen md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000"
+      className="fade-in animate-on-scroll flex flex-col w-full md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000"
     >
       <article className="flex flex-col w-full max-w-[95%] justify-center rounded-2xl items-center gap-3 shadow-[0_0_25px_5px] shadow-[#3D3027] p-10 md:p-20">
         <div className="flex justify-center items-center">

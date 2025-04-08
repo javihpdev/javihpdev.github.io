@@ -5,7 +5,7 @@ import Button from "../../lib/components/web/Button.tsx";
 function Inicio() {
     return (
         <div id="inicio" 
-        className="flex w-full md:pt-20 items-center text-center justify-center md:min-h-screen">
+        className="flex w-full md:pt-20 animation-on-scroll items-center text-center justify-center">
             <article className="flex md:flex-row flex-col max-w-[95%] md:pl-15 pt-20 mt-20 rounded-2xl md:mt-0 justify-center items-center gap-10 shadow-[0_0_25px_5px] shadow-[#3D3027] ">
                 <section className="flex flex-col gap-5 items-center">
                 {/* Div titulo */}

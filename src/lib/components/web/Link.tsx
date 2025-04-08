@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, MouseEvent } from 'react';
 
 type Props = {
     href: string;
@@ -7,8 +7,7 @@ type Props = {
     onClick?: () => void;
 }
 
-
-function Link ( {href, className,children, onClick}: Props){
+function Link({ href, className, children, onClick }: Props) {
     const spanRef = useRef<HTMLSpanElement>(null);
 
     const handleMouseEnter = () => {
@@ -25,13 +24,45 @@ function Link ( {href, className,children, onClick}: Props){
         }
     };
 
+    const handleClick = (e: MouseEvent) => {
+        // Si es un enlace interno (comienza con #)
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            
+            const id = href.substring(1); // Quitar el # del principio
+            const element = document.getElementById(id);
+            
+            if (element) {
+                // Obtener la altura de la barra de navegación
+                const navElement = document.querySelector('div.fixed') as HTMLElement;
+                const navHeight = navElement?.offsetHeight || 0;
+                
+                // Calcular la posición del elemento
+                const rect = element.getBoundingClientRect();
+                const offsetTop = rect.top + window.pageYOffset;
+                
+                // Desplazarse dejando un pequeño margen respecto a la barra de navegación
+                window.scrollTo({
+                    top: offsetTop - navHeight - 20, // 20px de margen adicional
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // Llamar a la función onClick proporcionada (para cerrar el menú, etc.)
+        if (onClick) {
+            onClick();
+        }
+    };
+
     return (
         <a
+            data-scroll-to={href}
             href={href}
             className={`${className} flex flex-col font-semibold overflow-hidden`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            onClick={onClick}
+            onClick={handleClick}
         >
             {children}
             <span
@@ -41,4 +72,5 @@ function Link ( {href, className,children, onClick}: Props){
         </a>
     );
 }
+
 export default Link;

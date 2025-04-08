@@ -15,8 +15,8 @@ import { AnimationProvider } from "./lib/components/AnimationProvider";
 createRoot(document.getElementById('porfolio')!).render(
   <BrowserRouter>
     <AnimationProvider>
-      <div className="w-full min-h-screen bg-gradient-to-br from-[#F5F0E8] via-[#B8A89A] to-[#5D4B3F]">
-        <Nav />
+      <Nav />
+      <div className="w-full md:mt-22 bg-gradient-to-br from-[#F5F0E8] via-[#B8A89A] to-[#5D4B3F]">
         <Routes>
           <Route path="/" element={<>
             <div className="flex flex-col gap-20">

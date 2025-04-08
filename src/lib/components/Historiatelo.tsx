@@ -1,11 +1,14 @@
+import LinkExternal from "./icons/LinkExternal"
+
 function Historiatelo (){
     return(
         <section className="flex flex-col justify-center items-center w-90 p-5 rounded-none shadow-none lg:shadow-[0_0_25px_5px] lg:shadow-[#3D3027] lg:rounded-2xl gap-5">
             {/* Div para la imagen del proyecto */}
-            <div className="flex items-center">
-            <a href="https://historiatelo.org/" target="_blank" className="shadow-[0_0_25px_5px]  shadow-[#3D3027] rounded-full">
-                <img src="./images/historiatelo.png" alt="Imagen Proyecto Historiatelo" className="w-40 h-40transition-all duration-500 hover:scale-110" />
+            <div className="flex relative justify-center items-center transition-all duration-500 hover:scale-110">
+            <a href="https://historiatelo.org/" target="_blank" className="flex">
+                <img src="./images/historiatelo.png" alt="Imagen Proyecto Historiatelo" className="flex bg-[#11B3AD] shadow-[0_0_25px_5px]  shadow-[#3D3027] rounded-full w-40 h-40 " />
             </a>
+            <LinkExternal classNameLink="absolute top-0 right-[-20px]" />
             </div>
             <div className="flex flex-col gap-4">
             <span className="text-2xl font-bold">Historiatelo</span>

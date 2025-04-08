@@ -1,13 +1,18 @@
+import LinkExternal from "./icons/LinkExternal"
+
 function Porfolio (){
     return(
         <section className="flex flex-col justify-center items-center w-90 p-5 rounded-none shadow-none lg:shadow-[0_0_25px_5px] lg:shadow-[#3D3027] lg:rounded-2xl gap-5">
             {/* Div para la imagen del proyecto */}
-            <div className="flex flex-col gap-5 items-center">
-            <a href="https://github.com/javihpdev/javihpdev.github.io" target="_blank" className="shadow-[0_0_25px_5px]  shadow-[#3D3027] rounded-full">
-                <img src="./images/imagenPorfolio.png" alt="Imagen Proyecto Historiatelo" className="w-40 h-40 rounded-full bg-white transition-all duration-500 hover:scale-110" />
+            <div className="flex relative justify-center items-center transition-all duration-500 hover:scale-110">
+            <a href="https://github.com/javihpdev/javihpdev.github.io" target="_blank" className="flex">
+                <img src="./images/imagenPorfolio.png" alt="Imagen Proyecto Historiatelo" className="bg-white shadow-[0_0_25px_5px]  shadow-[#3D3027] rounded-full w-40 h-40" />
             </a>
+            <LinkExternal classNameLink="absolute top-0 right-[-20px]" />
+            </div>
+            <div className="flex flex-col gap-4">
             <span className="text-2xl font-bold">Porfolio Personal</span>
-            <span>(Enlace al código en GitHub)</span>
+            <span className="underline">(Enlace al código en GitHub)</span>
             <span>-Página web Porfolio Personal: React, Tailwindcss, TypeScript.</span>
             <span>Muestra información sobre mí y mis proyectos, para ver el código fuente clica en la imagen!</span>
             </div>
