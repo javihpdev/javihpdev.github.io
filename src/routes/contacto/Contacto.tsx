@@ -1,43 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import  { useState } from 'react';
 import Button from "../../lib/components/web/Button";
 import Input from "../../lib/components/web/Input";
 
 
 function Contacto() {
-    const contactoRef = useRef(null);
-    const [isScrolling, setIsScrolling] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolling(true);
-            clearTimeout(window.scrollTimeout);
-            window.scrollTimeout = setTimeout(() => {
-                setIsScrolling(false);
-            }, 4000);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting && isScrolling) {
-                    entry.target.classList.add('opacity-100');
-                }
-            });
-        });
-
-        if (contactoRef.current) {
-            observer.observe(contactoRef.current);
-        }
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-            if (contactoRef.current) {
-                observer.unobserve(contactoRef.current);
-            }
-        };
-    }, [isScrolling]);
-
+   
     const [asunto, setAsunto] = useState('');
     const [nombre, setNombre] = useState('');
     const [errorNombre, setErrorNombre] = useState(false);
@@ -118,8 +85,8 @@ function Contacto() {
     };
 
     return (
-        <div id="contacto" ref={contactoRef} className="fade-in flex flex-col w-full md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000">
-            <article className="flex flex-col gap-10 md:max-w-[90%] max-w-[95%] justify-center rounded-2xl items-center shadow-[0_0_25px_5px] shadow-[#fff] p-10">
+        <div id="contacto" className="fade-in animate-on-scroll flex flex-col w-full md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000">
+            <article className="flex flex-col gap-10 md:max-w-[90%] max-w-[95%] justify-center rounded-2xl items-center shadow-[0_0_25px_5px] shadow-[#3D3027] p-10">
                 <h1 className="text-5xl font-bold">Contacta conmigo aquí</h1>
                 <form className="flex flex-col md:w-300 w-200 max-w-[90%] justify-center items-center md:p-5 gap-3" onSubmit={handleSubmit}>
                     <div className="flex md:flex-row flex-col w-full gap-3 md:gap-8">
@@ -140,7 +107,7 @@ function Contacto() {
 
                     {errorNombre && <p className='text-red-800'>Introduce un nombre mayor o igual a dos carácteres</p>}
                     {phoneError && <p className="text-red-800">Por favor, introduce solo números.</p>} 
-                    
+
                     <div className="flex w-full gap-8">
                         <Input placeholder="Asunto" className="outline-none border-1 rounded-lg p-2 w-full" value={asunto} onChange={(e) => setAsunto(e.target.value)} />
                     </div>

@@ -23,5 +23,4 @@ function geproBeta() {
         </html>
     );
 }
-
 export default geproBeta;

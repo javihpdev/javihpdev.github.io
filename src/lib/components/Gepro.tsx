@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Gepro() {
   return (
-    <section className="flex flex-col justify-center items-center p-5 w-90 rounded-none shadow-none md:shadow-[0_0_25px_5px] md:shadow-[#3D3027] md:rounded-2xl gap-5 ">
+    <section className="flex flex-col justify-center items-center p-5 w-90 rounded-none shadow-none lg:shadow-[0_0_25px_5px] lg:shadow-[#3D3027] lg:rounded-2xl gap-5 ">
       <div className="flex items-center">
         <Link to="/gepro-beta" className="shadow-[0_0_25px_5px] shadow-[#3D3027] rounded-full">
           <img

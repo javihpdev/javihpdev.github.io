@@ -9,27 +9,30 @@ import Proyectos from "./routes/proyectos/Proyectos";
 import Footer from "./lib/common/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GeproBeta from "./lib/components/GeProBeta";
+import { AnimationProvider } from "./lib/components/AnimationProvider";
 
 
 createRoot(document.getElementById('porfolio')!).render(
   <BrowserRouter>
-    <div className="w-full min-h-screen  bg-gradient-to-br from-[#F5F0E8] via-[#B8A89A] to-[#5D4B3F]">
-      <Nav />
-      <Routes >
-        <Route path="/" element={<>
-        <div className="flex flex-col gap-20">
-          <Inicio />
-          <AboutMe />
-          <Experiencia />
-          <Proyectos />
-          <Estudios />
-          <Contacto />
-          </div>
-        </>} />
-        <Route path="/gepro-beta" element={<GeproBeta />} />
-      </Routes>
-      <Footer />
-    </div>
+    <AnimationProvider>
+      <div className="w-full min-h-screen bg-gradient-to-br from-[#F5F0E8] via-[#B8A89A] to-[#5D4B3F]">
+        <Nav />
+        <Routes>
+          <Route path="/" element={<>
+            <div className="flex flex-col gap-20">
+              <Inicio />
+              <AboutMe />
+              <Experiencia />
+              <Proyectos />
+              <Estudios />
+              <Contacto />
+            </div>
+          </>} />
+          <Route path="/gepro-beta" element={<GeproBeta />} />
+        </Routes>
+        <Footer />
+      </div>
+    </AnimationProvider>
   </BrowserRouter>
 );
 

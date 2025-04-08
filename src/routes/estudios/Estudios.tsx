@@ -1,46 +1,8 @@
-import { useRef, useEffect, useState } from "react";
-
 function Estudios() {
-  const estudiosRef = useRef(null);
-  const [isScrolling, setIsScrolling] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolling(true);
-      clearTimeout(window.scrollTimeout);
-      window.scrollTimeout = setTimeout(() => {
-        setIsScrolling(false);
-      }, 4000); // Ajusta el tiempo de espera según sea necesario
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && isScrolling) {
-            entry.target.classList.add("opacity-100");
-          }
-        });
-      });
-
-    if (estudiosRef.current) {
-      observer.observe(estudiosRef.current);
-    }
-
-    return () => {
-        window.removeEventListener('scroll', handleScroll);
-        if (estudiosRef.current) {
-          observer.unobserve(estudiosRef.current);
-        }
-      };
-    }, [isScrolling]);
-
   return (
     <div
       id="estudios"
-      ref={estudiosRef}
-      className="fade-in flex flex-col w-full md:min-h-screen md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000"
+      className="fade-in animate-on-scroll flex flex-col w-full md:min-h-screen md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000"
     >
       <article className="flex flex-col w-full max-w-[95%] justify-center rounded-2xl items-center gap-10 shadow-[0_0_25px_5px] shadow-[#3D3027] p-10 md:p-20">
         <h1 className="text-5xl font-bold">Estudios</h1>

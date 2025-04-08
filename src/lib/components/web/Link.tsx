@@ -41,5 +41,4 @@ function Link ( {href, className,children, onClick}: Props){
         </a>
     );
 }
-
 export default Link;
