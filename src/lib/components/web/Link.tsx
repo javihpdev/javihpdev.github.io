@@ -13,15 +13,15 @@ function Link ( {href, className,children, onClick}: Props){
 
     const handleMouseEnter = () => {
         if (spanRef.current) {
-            spanRef.current.classList.remove('md:-translate-x-20');
-            spanRef.current.classList.add('md:translate-x-0');
+            spanRef.current.classList.remove('lg:-translate-x-20');
+            spanRef.current.classList.add('lg:translate-x-0');
         }
     };
 
     const handleMouseLeave = () => {
         if (spanRef.current) {
-            spanRef.current.classList.remove('md:translate-x-0');
-            spanRef.current.classList.add('md:-translate-x-30');
+            spanRef.current.classList.remove('lg:translate-x-0');
+            spanRef.current.classList.add('lg:-translate-x-30');
         }
     };
 
@@ -36,7 +36,7 @@ function Link ( {href, className,children, onClick}: Props){
             {children}
             <span
                 ref={spanRef}
-                className="block bg-[#5D4B3F] shadow-lg w-full h-0.5 md:-translate-x-30 md:transition-transform md:duration-500"
+                className="block bg-[#5D4B3F] shadow-lg w-full h-0.5 lg:-translate-x-30 lg:transition-transform lg:duration-500"
             ></span>
         </a>
     );

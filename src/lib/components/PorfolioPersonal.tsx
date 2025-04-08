@@ -7,6 +7,7 @@ function Porfolio (){
                 <img src="./images/imagenPorfolio.png" alt="Imagen Proyecto Historiatelo" className="w-40 h-40 rounded-full bg-white transition-all duration-500 hover:scale-110" />
             </a>
             <span className="text-2xl font-bold">Porfolio Personal</span>
+            <span>(Enlace al código en GitHub)</span>
             <span>-Página web Porfolio Personal: React, Tailwindcss, TypeScript.</span>
             <span>Muestra información sobre mí y mis proyectos, para ver el código fuente clica en la imagen!</span>
             </div>

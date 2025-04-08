@@ -119,12 +119,12 @@ function Contacto() {
 
     return (
         <div id="contacto" ref={contactoRef} className="fade-in flex flex-col w-full md:pt-20 justify-center text-center items-center gap-3 opacity-0 transition-opacity duration-4000">
-            <article className="flex flex-col gap-10 md:max-w-[90%] max-w-[95%] justify-center rounded-2xl items-center shadow-[0_0_25px_5px] shadow-[#3D3027] p-10">
+            <article className="flex flex-col gap-10 md:max-w-[90%] max-w-[95%] justify-center rounded-2xl items-center shadow-[0_0_25px_5px] shadow-[#fff] p-10">
                 <h1 className="text-5xl font-bold">Contacta conmigo aquí</h1>
                 <form className="flex flex-col md:w-300 w-200 max-w-[90%] justify-center items-center md:p-5 gap-3" onSubmit={handleSubmit}>
                     <div className="flex md:flex-row flex-col w-full gap-3 md:gap-8">
                         <Input placeholder="Tu Nombre" 
-                        className={`outline-none w-full border-1 rounded-lg p-2 ${errorNombre ? 'border-red-800' : ''} `}
+                        className={`outline-none w-full border-1 rounded-lg p-2 ${errorNombre ? 'border-red-500' : ''} `}
                         value={nombre} 
                         onChange={(e) => handleNombreChange(e)} />
                         <Input type="email" placeholder="Tu Email" className="outline-none border-1 rounded-lg w-full p-2" value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -132,14 +132,15 @@ function Contacto() {
                         <Input
                             type="text"
                             placeholder="Teléfono (opcional)"
-                            className={`outline-none border-1 rounded-lg w-full p-2 ${phoneError ? 'border-red-800' : ''}`}
+                            className={`outline-none border-1 rounded-lg w-full p-2 ${phoneError ? 'border-red-500' : ''}`}
                             value={phone}
                             onChange={handlePhoneChange}
                         />
                     </div>
-                    {errorNombre && <p className='text-red-800'>Introduce un nombre mayor o igual a dos carácteres</p>}
 
+                    {errorNombre && <p className='text-red-800'>Introduce un nombre mayor o igual a dos carácteres</p>}
                     {phoneError && <p className="text-red-800">Por favor, introduce solo números.</p>} 
+                    
                     <div className="flex w-full gap-8">
                         <Input placeholder="Asunto" className="outline-none border-1 rounded-lg p-2 w-full" value={asunto} onChange={(e) => setAsunto(e.target.value)} />
                     </div>
