@@ -9,7 +9,7 @@ function AboutMe() {
           <p className="font-bold text-5xl ">Sobre Mí</p>
         </div>
         <p className="flex w-full flex-col gap-2 justify-center items-center">
-          Soy una persona proactiva, con gran capacidad de aprendizaje y adaptación a nuevas tecnologías. Me apasiona el desarrollo web y me mantengo actualizado sobre las últimas tendencias y mejores prácticas. Busco oportunidades para seguir creciendo profesionalmente y contribuir al éxito de proyectos innovadores.
+          Soy una persona proactiva, con gran capacidad de aprendizaje y adaptación a nuevas tecnologías. Me mantengo siempre actualizado sobre las últimas tendencias y mejores prácticas. Busco oportunidades para seguir creciendo profesionalmente y contribuir al éxito de proyectos innovadores.
         </p>
       </article>
     </div>

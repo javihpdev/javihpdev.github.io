@@ -1,3 +1,5 @@
+import LinkExternal from "../../lib/components/icons/LinkExternal";
+
 function Experiencia() {
   return (
     <div
@@ -9,7 +11,7 @@ function Experiencia() {
           Experiencia Profesional
         </h1>
 
-        <div className="flex w-full  flex-col text-lg gap-5 justify-center items-center">
+        <div className="flex w-full  flex-col gap-5 justify-center items-center">
           TipoMedia (Gestión, Diseño y Mantenimiento de Páginas Web)
           Participación activa en el desarrollo y mantenimiento de diversos
           proyectos web. Experiencia en la gestión integral de sitios web, desde
@@ -36,16 +38,14 @@ function Experiencia() {
             />
           </div>
           <span className="block h-0.4 md:w-200 bg-[#2D2420]"></span>
-          <div className="flex flex-col justify-center items-center gap- ">
+          <div className="relative flex flex-col justify-center items-center shadow-[0_0_25px_5px] rounded-xl bg-white p-5 shadow-[#3D3027] hover:scale-110 transition-all duration-600">
           <a href="https://tipomedia.com/" target="_blank">
             <img
               src="./images/tipomedia_logo.png"
               alt="logo tipomedia"
-              className="bg-white p-4 rounded-lg hover:scale-110 transition-all duration-600"
             />
           </a>
-          <span>↑</span>
-          <span>Clica en la imagen para más información</span>
+          <LinkExternal classNameLink="absolute top-0 right-[-30px]" />
           </div>
         </div>
       </article>
